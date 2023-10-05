@@ -25,7 +25,7 @@ data=df[['subname','AGE_AT_SCAN ','SEX','DX_GROUP']]
 
 print(data['DX_GROUP'])
 
-feature_matrix=np.loadtxt('abide2residual_matrix和年龄回归')
+feature_matrix=np.loadtxt('abide2residual_matrix_with_age')
 feature_matrix=feature_matrix.tolist()
 import random
 number=list(range(795))
