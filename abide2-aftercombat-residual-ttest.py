@@ -25,8 +25,8 @@ for i in range(73):
         data[j][i]=data[j][i]+a[i]
 print(np.asarray(data))
 print('------------------------------')
-np.savetxt('abide2combat后将均值加回来',data)
-data1=np.loadtxt('abide2combat后将均值加回来')
+np.savetxt('add_back_the_mean_after_combate_abide2',data)
+data1=np.loadtxt('add_back_the_mean_after_combate_abide2')
 print(data1)
 c=[]
 data1=data1.tolist()
@@ -40,7 +40,7 @@ print(c)
 
 
 
-txt = np.loadtxt('abide2combat后将均值加回来')
+txt = np.loadtxt('add_back_the_mean_after_combate_abide2')
 dataset = pd.DataFrame(txt)
 print(dataset)
 
@@ -79,7 +79,7 @@ for i in range(73):
     for j in range(795):
         residual[j][i]=dataset[i][j]-lst1[i]*Y1[j]-lst2[i]
 print(np.asarray(residual))
-np.savetxt('abide2residual_matrix和年龄回归',np.asarray(residual))
+np.savetxt('abide2residual_matrix_with_age',np.asarray(residual))
 
 for i in range(73):
     asdlst = []
