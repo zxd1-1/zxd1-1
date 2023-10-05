@@ -36,8 +36,8 @@ for i in range(87):
         data[j][i]=data[j][i]+a[i]
 print(np.asarray(data))
 print('------------------------------')
-np.savetxt('combat后将均值加回来',data)
-data1=np.loadtxt('combat后将均值加回来')
+np.savetxt('add_back_the_mean_after_combat',data)
+data1=np.loadtxt('add_back_the_mean_after_combat')
 print(data1)
 c=[]
 data1=data1.tolist()
@@ -52,7 +52,7 @@ from numpy import dot  # 求矩阵点乘
 
 
 
-txt = np.loadtxt('combat后将均值加回来')
+txt = np.loadtxt('add_back_the_mean_after_combat')
 dataset = pd.DataFrame(txt)
 print(dataset)
 # txtDF.to_csv('file.csv', index=False)
@@ -93,9 +93,9 @@ for i in range(87):
     for j in range(884):
         residual[j][i]=dataset[i][j]-lst1[i]*Y1[j]-lst2[i]
 print(np.asarray(residual))
-np.savetxt('residual_matrix和年龄回归',np.asarray(residual))
+np.savetxt('residual_matrix_with_age',np.asarray(residual))
 
-# a=np.loadtxt('residual_matrix和年龄回归')
+# a=np.loadtxt('residual_matrix_with_age')
 # a=a.tolist()
 # alst=[]
 # for i in range(85):
