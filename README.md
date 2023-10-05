@@ -1,4 +1,3 @@
-In the ABIDE folder, the Outputs folder is the 884 nii.gz files we obtained from the website. 
 The feature_ matrix_ 87. xlsx file recorded the original topological feature of each subject obtained through filtration complexes.
 The abide_information.xlsx file recorded the clinical information of all subjects. 
 The meanfeaturedata.xlsx file recorded the result of de averaging the original topological features.
@@ -13,8 +12,6 @@ The "meanfeaturedata-combat. m" file was  the MATLAB codes that removeed covaria
 The "matlab1.mat" file recorded the corresponding features after removing covariates.
 The "abidemeanfeature.py" was the Python codes that de averaged the original topology features.
 -------------------------------------------------------------------------------------------------------------------
-The folder "Reslish_ Reho" was the Reho data of 795 fMRI images from ABIDE II.
-In the ABIDE folder, the Outputs folder is the 884 nii.gz files we obtained from the website. 
 The abide2_feature_ matrix73.xlsx file recorded the original topological feature of each subject obtained through filtration complexes.
 The abide2_information.xlsx file recorded the clinical information of all subjects. 
 The abide2meanfeaturedata.xlsx file recorded the result of de averaging the original topological features.
