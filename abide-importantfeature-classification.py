@@ -31,7 +31,7 @@ data.index=range(0,884)
 print(data['DX_GROUP'])
 feature_matrix=np.zeros((884,9))
 feature_matrix=feature_matrix.tolist()
-feature_matrix1=np.loadtxt('residual_matrix和年龄回归')
+feature_matrix1=np.loadtxt('residual_matrix_with_edge')
 feature_matrix1=feature_matrix1.tolist()
 feature_lst=[44,55,56,57,59,65]
 for i in range(884):
