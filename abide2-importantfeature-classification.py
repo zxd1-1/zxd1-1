@@ -26,7 +26,7 @@ data=df[['subname','AGE_AT_SCAN ','SEX','DX_GROUP']]
 print(data['DX_GROUP'])
 feature_matrix=np.zeros((795,8))
 feature_matrix=feature_matrix.tolist()
-feature_matrix1=np.loadtxt('abide2residual_matrix和年龄回归')
+feature_matrix1=np.loadtxt('abide2residual_matrix_with_age')
 feature_matrix1=feature_matrix1.tolist()
 feature_lst=[21,26,27,28,29,30,36,57]
 for i in range(795):
