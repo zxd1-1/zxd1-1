@@ -27,7 +27,7 @@ a=[0.8710407239819005, 1.0746606334841629, 1.3009049773755657, 1.552036199095022
 #         data[j][i]=data[j][i]+c[i]
 # #print(data)
 # np.savetxt('backfeaturedata',data)
-path=r'matlab1mat'
+path=r'matlab1.mat'
 matdata=scio.loadmat(path)
 print(matdata['Ddata'])
 data=matdata['Ddata'].tolist()
