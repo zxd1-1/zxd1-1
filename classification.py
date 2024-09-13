@@ -41,7 +41,7 @@ for i in range(884):
 data,target=feature_matrix[:] ,data['DX_GROUP'][:]
 for i in range(len(data)):
     for j in range(len(data[0])):
-        data[i][j]=int(data[i][j])
+        data[i][j]=round(data[i][j],2)
 data=np.array(data)
 kf=KFold(n_splits=10,shuffle=True,random_state=0)
 curr_score=0
