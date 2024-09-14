@@ -19,17 +19,17 @@ from pylab import *
 from sklearn.neural_network import MLPClassifier
 import copy
 from scipy import stats
-dirlst=os.listdir(r'D:\abide\Outputs\cpac\nofilt_noglobal\reho')
-df=pd.read_csv(r'D:\abide-master\abide-master\Phenotypic_V1_0b_preprocessed1.csv')
-df1=df[['FILE_ID','AGE_AT_SCAN','SEX','func_mean_fd','DX_GROUP']]
+# dirlst=os.listdir(r'D:\abide\Outputs\cpac\nofilt_noglobal\reho')
+# df=pd.read_csv(r'D:\abide-master\abide-master\Phenotypic_V1_0b_preprocessed1.csv')
+# df1=df[['FILE_ID','AGE_AT_SCAN','SEX','func_mean_fd','DX_GROUP']]
 lst=[]
 dirlst_test=os.listdir(r'D:\Reslice_reho\Reslice_reho')
 df_test=pd.read_excel(r'D:\func_sublist.xlsx')
 df1_test=df_test[['subname','SUB_ID','AGE_AT_SCAN ','SEX','DX_GROUP']]
 lst_test=[]
 df1_test.to_excel('abide2_information.xlsx')
-for i in range(len(df1['FILE_ID'])):
-    if df1['FILE_ID'][i]+'_reho.nii.gz'  in dirlst:#将其中数据齐全的884个取出来
+for i in range(len(df1_test['subname'])):
+    if df1_test['subname'][i]+'_reho.nii.gz'  in dirlst_test:#将其中数据齐全的884个取出来
         lst.append(i)
 data=df1.iloc[lst]
 data.index=range(0,884)
