@@ -32,7 +32,7 @@ for i in range(len(df1_test['subname'])):
     if df1_test['subname'][i]+'_reho.nii.gz'  in dirlst_test:#将其中数据齐全的884个取出来
         lst.append(i)
 data=df1.iloc[lst]
-data.index=range(0,884)
+data.index=range(0,795)
 print(data['DX_GROUP'])
 print(df1_test['DX_GROUP'])
 
